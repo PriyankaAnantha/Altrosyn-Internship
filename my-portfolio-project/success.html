@@ -4,32 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Sent! - Priyanka A</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link your existing stylesheet -->
+    <!-- Make sure this path is correct relative to success.html's location -->
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Additional styles specific to the success page, if needed */
-        .success-container {
+        body { /* Ensure body takes up height for centering if needed */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav { /* Copied from main styles.css in case of loading issues, but ideally not needed if styles.css loads */
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed; /* Or static if you prefer for this page */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #5f6368;
+            font-weight: 500;
+        }
+        .section { /* Ensure section takes up space */
+            flex-grow: 1;
+            display: flex; /* For centering content */
+            align-items: center; /* Vertical center */
+            justify-content: center; /* Horizontal center */
+            padding-top: 70px; /* If nav is fixed */
+        }
+        .status-message-container { /* Renamed for clarity */
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
+            max-width: 600px; /* Limit width */
+            margin: 20px auto; /* Some margin */
+            background-color: #f8f9fa; /* Light background */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .success-container h1 {
-            color: #1a73e8; /* Google Blue */
-            margin-bottom: 20px;
+        .status-message-container h1 {
+            color: #1a73e8;
+            margin-bottom: 1rem;
+            font-size: 2rem;
         }
-        .success-container p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        .status-message-container p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #5f6368;
         }
-        .success-container .btn { /* Re-use your button style or define a new one */
-            background-color: #34a853; /* Google Green for success */
+        /* Generic button style from styles.css should apply if linked correctly */
+        /* Specific overrides for buttons on this page: */
+        .status-message-container .btn-primary { /* For the main action, e.g., Back to Home */
+            background-color: #1a73e8; /* Default blue from .btn */
+            color: white;
         }
-        .success-container .btn:hover {
-            background-color: #1e8e3e; /* Darker Green */
+        .status-message-container .btn-primary:hover {
+            background-color: #1557b0;
+        }
+        .status-message-container .btn-secondary { /* For a secondary action */
+            background-color: #5f6368; /* Grey */
+            color: white;
+            margin-top: 1rem; /* Add some space if stacked */
+        }
+        .status-message-container .btn-secondary:hover {
+            background-color: #4a4e51;
+        }
+         footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            text-align: center;
+            color: #5f6368;
+            border-top: 1px solid #dadce0;
+            margin-top: auto; /* Push footer to bottom if body is flex */
         }
     </style>
 </head>
 <body>
-    <!-- You can include your standard navigation if you want -->
     <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">PA</a>
@@ -42,15 +111,15 @@
         </div>
     </nav>
 
-    <section class="section">
-        <div class="container success-container">
+    <main class="section"> <!-- Use main tag for main content -->
+        <div class="status-message-container">
             <h1>Message Sent Successfully!</h1>
-            <p>Thank you for reaching out, Priyanka. I will get back to you as soon as possible.</p>
-            <a href="index.html" class="btn">Back to Home</a>
-            <br><br>
-            <a href="contact.html" class="btn" style="background-color: #5f6368;">Send Another Message</a>
+            <p>Thank you for reaching out. I will get back to you as soon as possible.</p>
+            <a href="/" class="btn btn-primary">Back to Home</a>
+            <br> <!-- Or use margin for spacing -->
+            <a href="contact.html" class="btn btn-secondary">Send Another Message</a>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
