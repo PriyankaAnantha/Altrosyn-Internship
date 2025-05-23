@@ -20,7 +20,7 @@ body {
     color: #EAEAEA; /* Light Text on Dark */
     background-color: #0F0F0F; /* Main Dark Background */
     overflow-x: hidden; /* Prevent horizontal scroll */
-    cursor: none; /* HIDE DEFAULT CURSOR FOR CUSTOM CURSOR */
+    cursor: default; /* HIDE DEFAULT CURSOR FOR CUSTOM CURSOR */
 }
 
 /* Basic Scrollbar Styling (Optional, WebKit only) */
