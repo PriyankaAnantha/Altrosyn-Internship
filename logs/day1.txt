@@ -37,10 +37,24 @@ Have already explored Grok
 DeepSeek Coder
     - LLM already explored. 
 
+Open router AI 
+    - Multiple LLMs at one place. 
+    Got this error "This request requires more credits, or fewer max_tokens. You requested up to 32000 tokens, but can only afford 533. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account"
 
+Geminin code assis  
+    -Google's LLM already explored. 
 
+ADDITIONS
 
+I use 
 
+Pieces OS {Pieces Long-Term Memory Agent captures, preserves, and resurfaces historical workflow details, so you can pick up where you left off. Capture 9 months of context across Windows, MacOS, and Linux. }
+
+Cursor AI  {A proprietary AI-powered integrated development environment }
+
+Cluade 
+
+Qwen AI 
 
 
 
