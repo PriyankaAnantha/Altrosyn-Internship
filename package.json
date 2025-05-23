@@ -1,0 +1,26 @@
+{
+  "name": "altrosyn-internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PriyankaAnantha/Altrosyn-Internship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PriyankaAnantha/Altrosyn-Internship/issues"
+  },
+  "homepage": "https://github.com/PriyankaAnantha/Altrosyn-Internship#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
