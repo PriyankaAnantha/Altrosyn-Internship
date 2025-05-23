@@ -44,7 +44,8 @@ Open router AI
 Geminin code assis  
     -Google's LLM already explored. 
 
-ADDITIONS
+
+ADDITIONS --> 
 
 I use 
 
@@ -52,9 +53,11 @@ Pieces OS {Pieces Long-Term Memory Agent captures, preserves, and resurfaces his
 
 Cursor AI  {A proprietary AI-powered integrated development environment }
 
-Cluade 
+Cluade {Claude is a next generation AI assistant built by Anthropic} 
 
-Qwen AI 
+Qwen AI {the large language model family built by Alibaba Cloud.}
+
+
 
 
 
