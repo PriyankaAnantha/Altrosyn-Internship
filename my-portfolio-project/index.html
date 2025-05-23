@@ -5,38 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanka A - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">PA</a> <!-- Logo links to Home -->
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li> <!-- 'active' class for current page -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">PA</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home-section" class="section">
+    <header id="home-section" class="section"> <!-- Changed to header for semantic meaning -->
         <div class="container">
             <h1>Hi, I'm Priyanka A</h1>
-            <p class="subtitle">3rd Year B.Tech Computing and Data Sciences Student at Sai University</p>
+            <p class="subtitle">A passionate 3rd Year B.Tech Computing and Data Sciences student at Sai University, eager to build innovative solutions and explore the world of technology.</p>
+            <div class="home-cta">
+                <a href="projects.html" class="btn">View My Projects</a>
+                <a href="contact.html" class="btn btn-outline" style="margin-left: 1rem;">Get in Touch</a>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>© 2024 Priyanka A. All rights reserved.</p>
+            <!-- Optional: Add links to GitHub/LinkedIn here -->
+            <!-- <p>
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p> -->
         </div>
     </footer>
 
-    <!-- No specific JavaScript needed for the home page itself -->
+    <script src="script.js"></script>
 </body>
 </html>
