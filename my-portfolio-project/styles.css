@@ -1,0 +1,286 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border don't add to element's total width/height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Google's standard font */
+    line-height: 1.6; /* Improves readability */
+    color: #202124; /* Google's primary text color */
+    background-color: #ffffff; /* Standard white background */
+    padding-top: 70px; /* Add padding to body to prevent content from being hidden behind fixed navbar. Adjust if nav height changes. */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px; /* Limits content width for better readability on large screens */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Adds some space on the sides */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth, common in Google UI */
+    position: fixed; /* Keeps navbar at the top during scroll */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+.nav-container {
+    display: flex; /* Arranges logo and links in a row */
+    justify-content: space-between; /* Pushes logo to left, links to right */
+    align-items: center; /* Vertically aligns items in nav */
+    padding: 1rem 2rem; /* Padding inside the nav container */
+    max-width: 1200px; /* Consistent with the main container */
+    margin: 0 auto; /* Centers the nav content */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a73e8; /* Google's blue */
+    text-decoration: none; /* Remove underline from logo if it's a link */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none; /* Removes default bullet points from list */
+    gap: 2rem; /* Space between navigation links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5f6368; /* Google's secondary text color */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #1a73e8; /* Blue color on hover */
+}
+
+/* Style for the active navigation link */
+.nav-links a.active {
+    color: #1a73e8; /* Blue color for the active page link */
+    font-weight: 700; /* Make it bolder */
+    border-bottom: 2px solid #1a73e8; /* Optional: add an underline to the active link */
+    padding-bottom: 0.25rem; /* Adjust padding if using border-bottom */
+}
+
+
+/* Section styles */
+.section {
+    padding: 4rem 0; /* Adjusted padding, original 5rem might be too much with fixed nav */
+    min-height: calc(100vh - 70px); /* Calculate min-height to fill viewport below navbar */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically within the section */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Specific section styling */
+#home-section { /* Using a more specific ID for the home section */
+    background-color: #f8f9fa; /* Light gray, common in Google UIs */
+    text-align: center;
+}
+
+#about-section, #projects-section, #contact-section {
+    background-color: #ffffff;
+}
+
+/* Centering content within sections that use .container */
+.section .container {
+    width: 100%; /* Allow container to take full width before max-width kicks in */
+    text-align: left; /* Default text alignment for content inside container */
+}
+
+#home-section .container {
+    text-align: center; /* Center text for home section specifically */
+}
+
+
+/* Heading styles */
+h1 {
+    font-size: 3rem; /* Large for main titles */
+    margin-bottom: 1rem;
+    color: #202124;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #5f6368;
+    margin-bottom: 2rem; /* Added margin for spacing */
+}
+
+h2 {
+    font-size: 2.5rem; /* Slightly larger for section titles */
+    margin-bottom: 2.5rem; /* Increased margin for better separation */
+    color: #202124;
+    text-align: center; /* Center section titles */
+    width: 100%; /* Ensure h2 takes full width to center properly */
+}
+
+/* About section styles */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto; /* Centers the content block */
+    text-align: center; /* Center text and button within about-content */
+}
+
+.about-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #5f6368;
+    text-align: left; /* Keep paragraph text left-aligned for readability */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px; /* Slightly rounded corners */
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1557b0; /* Darker blue on hover */
+}
+
+/* Projects section styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card { /* Basic styling for project cards if you add them */
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Contact form styles */
+.contact-form-container { /* Wrapper for the form for better centering */
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form */
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px; /* Optional: rounded corners for the form container */
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); Optional: shadow for form container */
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #5f6368;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #dadce0; /* Google-like input border color */
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1a73e8; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2); /* Subtle focus ring */
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical; /* Allow vertical resize only */
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    text-align: center;
+    color: #5f6368;
+    border-top: 1px solid #dadce0; /* Subtle top border */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 0; /* Remove padding when nav is not fixed or stacks */
+    }
+    nav {
+        position: static; /* Let nav flow with content on small screens */
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .nav-container {
+        flex-direction: column; /* Stack logo and links */
+        gap: 1rem;
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        width: 100%; /* Make links take full width */
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a {
+        display: block; /* Make link clickable over full width */
+        padding: 0.5rem 0;
+    }
+    .nav-links a.active {
+        border-bottom: none; /* Remove border for stacked nav items */
+        background-color: #e8f0fe; /* Light blue background for active link */
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 3rem 20px; /* Adjust padding for sections on mobile */
+        min-height: auto; /* Allow sections to be their natural height */
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation for smooth scrolling (useful if you have internal links within a long page) */
+/* Not very relevant for MPA, but harmless to keep */
+html {
+    scroll-behavior: smooth;
+}
