@@ -1,9 +1,7 @@
+Update format for submission before 6-PM everyday: 
 
-
----
-update format: 
-
-📌 Daily Task Submission 
+{
+    📌 Daily Task Submission 
 
 ✅ Summary of what you did
 
@@ -15,12 +13,35 @@ update format:
 
 Let’s keep this consistent every day. Thanks!
 
----
+}
+
+-----------------------------------------------------
 
 Task is to: Create a landing page. A Portfolio website with form. 
 
+-----------------------------------------------------
 
----
+
+My Work-flow: 
+
+Installed TraycerAI, ClineAI vs code extension. 
+    -    These are Autonomous coding agent right in IDE
+
+Downloaded Windsurf
+    - Formerly known as Codeium, Windsurf is an AI-powered code editor/Installed designed to enhance developer productivity
+
+Have already explored Grok 
+    - An AI assistant developed by xAI. Use it for coding, reasoning and image generation. 
+
+
+DeepSeek Coder
+    - LLM already explored. 
+
+
+
+
+
+
 
 
 
