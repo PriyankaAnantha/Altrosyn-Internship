@@ -18,6 +18,8 @@ A personal portfolio website built with vanilla HTML, CSS, and JavaScript, featu
 
 ## 📸 Screenshots
 
+![video](https://github.com/PriyankaAnantha/Altrosyn-Internship/blob/main/my-portfolio-project/desktop_gif.mp4)](Desktop view)
+
 ![Desktop Homepage](image.png) 
 *(Homepage - Desktop View)*
 
@@ -25,6 +27,9 @@ A personal portfolio website built with vanilla HTML, CSS, and JavaScript, featu
 *(Mobile Navigation)*
 
 
+*(Working Supabase intergration.)*
+
+![alt text](image-2.png)
 
 
 ## 🛠️ Tech Stack
