@@ -4,120 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Sent! - Priyanka A</title>
-    <!-- Make sure this path is correct relative to success.html's location -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Inline styles for this specific page can complement styles.css -->
     <style>
-        body { /* Ensure body takes up height for centering if needed */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        nav { /* Copied from main styles.css in case of loading issues, but ideally not needed if styles.css loads */
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: fixed; /* Or static if you prefer for this page */
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #5f6368;
-            font-weight: 500;
-        }
-        .section { /* Ensure section takes up space */
-            flex-grow: 1;
-            display: flex; /* For centering content */
-            align-items: center; /* Vertical center */
-            justify-content: center; /* Horizontal center */
-            padding-top: 70px; /* If nav is fixed */
-        }
-        .status-message-container { /* Renamed for clarity */
+        /* Styles from previous answer for .status-message-container are good */
+        /* Ensure they don't conflict heavily with the new styles.css if you've made big changes */
+        body { display: flex; flex-direction: column; min-height: 100vh; padding-top: 0;} /* Override body padding-top if nav is static here */
+        nav { position: static; } /* Example: Making nav static for simple status pages */
+
+        .status-message-container {
             text-align: center;
             padding: 40px 20px;
-            max-width: 600px; /* Limit width */
-            margin: 20px auto; /* Some margin */
-            background-color: #f8f9fa; /* Light background */
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #FFFFFF; /* White card */
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
         .status-message-container h1 {
-            color: #1a73e8;
+            color: #005F73; /* Accent color */
             margin-bottom: 1rem;
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
         .status-message-container p {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
-            color: #5f6368;
+            color: #495057;
         }
-        /* Generic button style from styles.css should apply if linked correctly */
-        /* Specific overrides for buttons on this page: */
-        .status-message-container .btn-primary { /* For the main action, e.g., Back to Home */
-            background-color: #1a73e8; /* Default blue from .btn */
-            color: white;
-        }
-        .status-message-container .btn-primary:hover {
-            background-color: #1557b0;
-        }
-        .status-message-container .btn-secondary { /* For a secondary action */
-            background-color: #5f6368; /* Grey */
-            color: white;
-            margin-top: 1rem; /* Add some space if stacked */
-        }
-        .status-message-container .btn-secondary:hover {
-            background-color: #4a4e51;
-        }
-         footer {
-            background-color: #f8f9fa;
-            padding: 2rem 0;
-            text-align: center;
-            color: #5f6368;
-            border-top: 1px solid #dadce0;
-            margin-top: auto; /* Push footer to bottom if body is flex */
-        }
+        .status-message-container .btn { margin-bottom: 0.5rem; }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">PA</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <nav> <!-- Consider if nav is truly needed on a simple success/error page -->
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">PA</a> <!-- Or href="/" -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main class="section"> <!-- Use main tag for main content -->
+    <main class="section" style="background-color: #F7F9FC;"> <!-- Main content section with light bg -->
         <div class="status-message-container">
             <h1>Message Sent Successfully!</h1>
             <p>Thank you for reaching out. I will get back to you as soon as possible.</p>
-            <a href="/" class="btn btn-primary">Back to Home</a>
-            <br> <!-- Or use margin for spacing -->
-            <a href="contact.html" class="btn btn-secondary">Send Another Message</a>
+            <a href="/" class="btn">Back to Home</a> <!-- Using primary .btn style -->
+            <br>
+            <a href="contact.html" class="btn btn-outline">Send Another Message</a> <!-- Using outline style -->
         </div>
     </main>
 
@@ -126,5 +65,6 @@
             <p>© 2024 Priyanka A. All rights reserved.</p>
         </div>
     </footer>
+    <!-- No script needed here unless for active nav, but probably not necessary -->
 </body>
 </html>

@@ -7,56 +7,79 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        .error-container {
+        body { display: flex; flex-direction: column; min-height: 100vh; padding-top: 0;}
+        nav { position: static; }
+
+        .status-message-container { /* Re-using class from success.html for consistency */
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
-        .error-container h1 {
-            color: #ea4335; /* Google Red for error */
-            margin-bottom: 20px;
+        .status-message-container h1 {
+            color: #D93025; /* More distinct error red */
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
         }
-        .error-container p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        .status-message-container p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #495057;
+        }
+        .status-message-container .btn { margin-bottom: 0.5rem; }
+        #errorMessageDetail {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: -1rem;
+            margin-bottom: 1.5rem;
+            word-break: break-word;
         }
     </style>
 </head>
 <body>
     <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">PA</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+         <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">PA</a> <!-- Or href="/" -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section class="section">
-        <div class="container error-container">
+    <main class="section" style="background-color: #F7F9FC;">
+        <div class="status-message-container">
             <h1>Oops! Something Went Wrong.</h1>
-            <p>We couldn't send your message at this time. Please try again later or contact me directly if the issue persists.</p>
-            <!-- You can retrieve and display a more specific error message using URL parameters if you want to get fancy -->
-            <p id="errorMessageDetail" style="color: #5f6368; font-size: 0.9em;"></p>
+            <p>We couldn't send your message at this time. Please try again.</p>
+            <p id="errorMessageDetail"></p> <!-- For displaying specific error details -->
             <a href="contact.html" class="btn">Try Again</a>
-            <br><br>
-            <a href="index.html" class="btn" style="background-color: #5f6368;">Back to Home</a>
+            <br>
+            <a href="/" class="btn btn-outline">Back to Home</a>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
             <p>© 2024 Priyanka A. All rights reserved.</p>
         </div>
     </footer>
+
     <script>
-        // Optional: If you pass an error message via URL query parameter
+        // Optional: If you pass an error message via URL query parameter from script.js
+        // Example: window.location.href = `error.html?message=${encodeURIComponent(errorDetailsFromServer)}`;
         const params = new URLSearchParams(window.location.search);
         const errorDetail = params.get('message');
         if (errorDetail) {
-            document.getElementById('errorMessageDetail').textContent = decodeURIComponent(errorDetail);
+            document.getElementById('errorMessageDetail').textContent = `Details: ${decodeURIComponent(errorDetail)}`;
+        } else {
+             document.getElementById('errorMessageDetail').textContent = 'If the issue persists, please try contacting me directly.';
         }
     </script>
 </body>
