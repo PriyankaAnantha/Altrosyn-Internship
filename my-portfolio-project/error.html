@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Priyanka A</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .error-container h1 {
+            color: #ea4335; /* Google Red for error */
+            margin-bottom: 20px;
+        }
+        .error-container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">PA</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container error-container">
+            <h1>Oops! Something Went Wrong.</h1>
+            <p>We couldn't send your message at this time. Please try again later or contact me directly if the issue persists.</p>
+            <!-- You can retrieve and display a more specific error message using URL parameters if you want to get fancy -->
+            <p id="errorMessageDetail" style="color: #5f6368; font-size: 0.9em;"></p>
+            <a href="contact.html" class="btn">Try Again</a>
+            <br><br>
+            <a href="index.html" class="btn" style="background-color: #5f6368;">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Priyanka A. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Optional: If you pass an error message via URL query parameter
+        const params = new URLSearchParams(window.location.search);
+        const errorDetail = params.get('message');
+        if (errorDetail) {
+            document.getElementById('errorMessageDetail').textContent = decodeURIComponent(errorDetail);
+        }
+    </script>
+</body>
+</html>
