@@ -1,0 +1,68 @@
+
+
+### ✅ AI Tools List
+
+1. *Traycer AI*
+
+   * *Correct Spelling*: Traycer
+   * *Description*: An AI-powered coding assistant that plans, implements, and validates code changes. ([GitHub][1], [traycer.ai][2])
+
+2. *Cline*
+
+   * *Correct Spelling*: Cline
+   * *Description*: An open-source AI coding assistant with dual Plan/Act modes, terminal execution, and Model Context Protocol (MCP) for VS Code. ([Cline][3])
+
+3. *Windsurf*
+
+   * *Correct Spelling*: Windsurf
+   * *Description*: Formerly known as Codeium, Windsurf is an AI-powered code editor designed to enhance developer productivity. ([Windsurf][4])
+
+4. *LMarena*
+
+   * *Correct Spelling*: LMarena
+   * *Description*: Also known as Copilot Arena, it's an open-source AI coding assistant providing paired autocomplete completions from different LLMs. ([Axios][5], [GitHub][1])
+
+5. *Grok*
+
+   * *Correct Spelling*: Grok
+   * *Description*: An AI assistant developed by xAI, offering advanced capabilities in reasoning, coding, and visual processing. ([xAI][6])
+
+6. *DeepSeek Coder*
+
+   * *Correct Spelling*: DeepSeek Coder
+   * *Description*: A series of code language models trained from scratch, optimized for code completion and understanding. ([DeepSeek Coder][7])
+
+7. *OpenRouter.ai*
+
+   * *Correct Spelling*: OpenRouter.ai
+   * *Description*: A unified interface for accessing various large language models (LLMs) with competitive pricing and uptime. ([techradar.com][8], [OpenRouter][9])
+
+8. *Gemini Code Assist*
+
+   * *Correct Spelling*: Gemini Code Assist
+   * *Description*: Google's AI coding assistant that completes code as you write and generates entire code blocks or functions on demand. ([Google Cloud][10], [Google Cloud][11])
+
+---
+
+
+
+[1]: https://github.com/lmarena/copilot-arena?utm_source=chatgpt.com "lmarena/copilot-arena - GitHub"
+[2]: https://traycer.ai/?utm_source=chatgpt.com "Traycer: AI-Powered Pair Programming"
+[3]: https://cline.bot/?utm_source=chatgpt.com "Cline - AI Autonomous Coding Agent for VS Code"
+[4]: https://windsurf.com/?utm_source=chatgpt.com "Windsurf (formerly Codeium) - The most powerful AI Code Editor"
+[5]: https://www.axios.com/2025/05/19/microsoft-grok-elon-musk-cloud?utm_source=chatgpt.com "Microsoft will host Elon Musk's Grok in its cloud"
+[6]: https://x.ai/grok?utm_source=chatgpt.com "Grok - xAI"
+[7]: https://deepseekcoder.github.io/?utm_source=chatgpt.com "DeepSeek Coder"
+[8]: https://www.techradar.com/news/live/google-i-o-2025-live-project-astra-gemini-and-more?utm_source=chatgpt.com "Google I/O 2025 as it happened: AI Search, Veo, Flow, Gemini, Android XR, and all the big announcements"
+[9]: https://openrouter.ai/?utm_source=chatgpt.com "OpenRouter"
+[10]: https://codeassist.google/?utm_source=chatgpt.com "Gemini Code Assist | AI coding assistant"
+[11]: https://cloud.google.com/products/gemini/code-assist?utm_source=chatgpt.com "Gemini Code Assist: an AI coding assistant - Google Cloud"
+
+
+
+--------------------------------------------------------
+
+Topics to cover: 
+
+JavaScript: Variables, functions, DOM manipulation, events, async/await
+HTML: Basics, structure, semantic tags, forms, media
