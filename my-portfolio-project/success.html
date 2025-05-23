@@ -5,66 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Sent! - Priyanka A</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Inline styles for this specific page can complement styles.css -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        /* Styles from previous answer for .status-message-container are good */
-        /* Ensure they don't conflict heavily with the new styles.css if you've made big changes */
-        body { display: flex; flex-direction: column; min-height: 100vh; padding-top: 0;} /* Override body padding-top if nav is static here */
-        nav { position: static; } /* Example: Making nav static for simple status pages */
-
+        /* Specific styles for status pages, harmonizing with dark theme */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 0; /* Assuming static header for status pages */
+            background-color: #0F0F0F; /* Match main dark background */
+        }
+        .site-header { /* Make header static for simplicity on status pages */
+            position: static;
+            background: #161616; /* Slightly different from body for header bar */
+            backdrop-filter: none;
+            border-bottom: 1px solid #333333;
+        }
+        .status-page-main { /* Class for the main content area of status pages */
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem;
+        }
         .status-message-container {
             text-align: center;
-            padding: 40px 20px;
+            padding: 2.5rem 3rem;
             max-width: 600px;
-            margin: 20px auto;
-            background-color: #FFFFFF; /* White card */
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            background-color: #1E1E1E; /* Dark Surface */
+            border-radius: 12px;
+            border: 1px solid #333333;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
         .status-message-container h1 {
-            color: #005F73; /* Accent color */
-            margin-bottom: 1rem;
-            font-size: 2.2rem;
+            color: #E07A5F; /* ACCENT */
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
         }
         .status-message-container p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: #495057;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            color: #A0A0A0;
         }
-        .status-message-container .btn { margin-bottom: 0.5rem; }
+        .status-message-container .btn {
+            margin: 0.5rem; /* Spacing around buttons */
+        }
     </style>
 </head>
 <body>
-    <nav> <!-- Consider if nav is truly needed on a simple success/error page -->
+    <header class="site-header">
         <div class="container">
             <div class="nav-container">
-                <a href="index.html" class="logo">PA</a> <!-- Or href="/" -->
-                <ul class="nav-links">
+                <a href="index.html" class="logo">PA</a>
+                <!-- Mobile menu toggle not strictly needed on status pages, but can keep for consistency -->
+                 <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" style="display:none;"> <!-- Hide on status pages for simplicity -->
+                    <span class="hamburger-icon"><span></span><span></span><span></span></span>
+                </button>
+                <!-- Desktop links also optional on status pages -->
+                 <ul class="nav-links" style="display:none;"> <!-- Hide on status pages for simplicity -->
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <main class="section" style="background-color: #F7F9FC;"> <!-- Main content section with light bg -->
-        <div class="status-message-container">
-            <h1>Message Sent Successfully!</h1>
-            <p>Thank you for reaching out. I will get back to you as soon as possible.</p>
-            <a href="/" class="btn">Back to Home</a> <!-- Using primary .btn style -->
-            <br>
-            <a href="contact.html" class="btn btn-outline">Send Another Message</a> <!-- Using outline style -->
+    <main class="status-page-main">
+        <div class="status-message-container animate-on-load is-visible"> <!-- is-visible to show immediately -->
+            <h1>Message Sent!</h1>
+            <p>Thank you for reaching out. I'll get back to you as soon as I can.</p>
+            <div>
+                <a href="/" class="btn">Back to Home</a>
+                <a href="contact.html" class="btn btn-outline">Send Another</a>
+            </div>
         </div>
     </main>
 
-    <footer>
+    <footer> <!-- Footer should still use main styles.css -->
         <div class="container">
             <p>© 2024 Priyanka A. All rights reserved.</p>
         </div>
     </footer>
-    <!-- No script needed here unless for active nav, but probably not necessary -->
+    <!-- Minimal JS for status pages, active nav link logic not critical here -->
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>

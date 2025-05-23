@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects - Priyanka A</title>
+    <title>My Work - Priyanka A</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <header class="site-header">
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="logo">PA</a>
@@ -18,56 +18,66 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <section id="projects-section" class="section">
-        <div class="container">
-            <h2>My Work & Projects</h2>
-            <p class="subtitle" style="text-align: center; max-width: 800px; margin-bottom: 3rem;">
-                Here's a selection of projects I've worked on, showcasing my skills in data science, web development, and problem-solving.
-            </p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <!-- Optional: <div class="project-card-image" style="background-image: url('path/to/project1-image.jpg');"></div> -->
-                    <div class="project-card-content">
-                        <h3>Interactive Data Dashboard</h3>
-                        <p>Developed a web-based dashboard using Python (Flask/Dash) and Plotly to visualize and analyze sales trends from a sample dataset. Features include dynamic filtering and interactive charts.</p>
-                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    <main>
+        <section id="projects-section" class="section">
+            <div class="container">
+                <h2 class="animate-on-load">Featured Projects</h2>
+                <p class="subtitle animate-on-load" style="transition-delay: 0.1s;">
+                    A glimpse into my technical explorations and problem-solving endeavors.
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card animate-on-load" style="transition-delay: 0.2s;">
+                        <div class="project-card-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');"></div>
+                        <div class="project-card-content">
+                            <h3>Interactive Data Dashboard</h3>
+                            <p>A web-based dashboard visualizing sales trends using Python (Flask/Dash) and Plotly, featuring dynamic filtering and interactive charts for data-driven insights.</p>
+                            <a href="#" class="btn text-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project-card">
-                    <!-- <div class="project-card-image"></div> -->
-                    <div class="project-card-content">
-                        <h3>Sentiment Analysis Tool</h3>
-                        <p>Built a Python script that performs sentiment analysis on a collection of text reviews using NLTK and Scikit-learn. Classified reviews as positive, negative, or neutral.</p>
-                        <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Explore Code</a>
+                    <div class="project-card animate-on-load" style="transition-delay: 0.3s;">
+                         <div class="project-card-image" style="background-image: url('https://images.unsplash.com/photo-1516131206008-dd041a97645a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');"></div>
+                        <div class="project-card-content">
+                            <h3>AI Sentiment Analyzer</h3>
+                            <p>Developed a Python tool for sentiment analysis on text reviews with NLTK & Scikit-learn, classifying feedback into positive, negative, or neutral categories.</p>
+                            <a href="#" class="btn btn-outline text-link" target="_blank" rel="noopener noreferrer">Explore Code</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="project-card">
-                    <!-- <div class="project-card-image"></div> -->
-                    <div class="project-card-content">
-                        <h3>Personal Portfolio Website</h3>
-                        <p>This very website! Designed and developed from scratch using only HTML, CSS, and vanilla JavaScript, with a Node.js backend for the contact form connected to Supabase.</p>
-                        <a href="https://github.com/PriyankaAnantha/Altrosyn-Internship" class="btn" target="_blank" rel="noopener noreferrer">See Repository</a>
+                    <div class="project-card animate-on-load" style="transition-delay: 0.4s;">
+                         <div class="project-card-image" style="background-image: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');"></div>
+                        <div class="project-card-content">
+                            <h3>Personal Portfolio (This Site)</h3>
+                            <p>Designed and built from the ground up using vanilla HTML, CSS, and JavaScript, showcasing pure front-end skills with a Node.js/Supabase backend for contact functionality.</p>
+                            <a href="https://github.com/PriyankaAnantha/Altrosyn-Internship" class="btn text-link" target="_blank" rel="noopener noreferrer">View Repository</a>
+                        </div>
                     </div>
-                </div>
-                 <div class="project-card">
-                    <!-- <div class="project-card-image"></div> -->
-                    <div class="project-card-content">
-                        <h3>More To Come!</h3>
-                        <p>I am actively working on new and exciting projects. Stay tuned for updates as I continue to learn and build!</p>
-                        <!-- No button needed, or link to contact page -->
+
+                     <div class="project-card animate-on-load" style="transition-delay: 0.5s;">
+                         <div class="project-card-image" style="background-color: #2A2A2A;"></div> <!-- Simple placeholder color -->
+                        <div class="project-card-content">
+                            <h3>Future Innovations</h3>
+                            <p>Continuously exploring new ideas and technologies. Check back for exciting updates on upcoming projects and experiments!</p>
+                            <!-- <a href="contact.html" class="btn btn-outline text-link">Suggest an Idea</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
+    <footer class="animate-on-load">
         <div class="container">
             <p>© 2024 Priyanka A. All rights reserved.</p>
         </div>
