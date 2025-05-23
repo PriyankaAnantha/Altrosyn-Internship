@@ -3,44 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyanka A - Portfolio</title>
+    <title>Priyanka A - Creative Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <header class="site-header">
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="logo">PA</a>
-                <ul class="nav-links">
+                <ul class="nav-links"> <!-- Desktop Navigation -->
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header id="home-section" class="section"> <!-- Changed to header for semantic meaning -->
-        <div class="container">
-            <h1>Hi, I'm Priyanka A</h1>
-            <p class="subtitle">A passionate 3rd Year B.Tech Computing and Data Sciences student at Sai University, eager to build innovative solutions and explore the world of technology.</p>
-            <div class="home-cta">
-                <a href="projects.html" class="btn">View My Projects</a>
-                <a href="contact.html" class="btn btn-outline" style="margin-left: 1rem;">Get in Touch</a>
+                <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
             </div>
         </div>
     </header>
 
-    <footer>
+    <main>
+        <section id="home-section" class="section">
+            <div class="container">
+                <h1 class="animate-on-load">Hi, I'm Priyanka A</h1>
+                <p class="subtitle animate-on-load" style="transition-delay: 0.15s;">
+                    A 3rd Year B.Tech Computing and Data Sciences student at Sai University, crafting digital experiences and exploring the frontiers of technology.
+                </p>
+                <div class="home-cta animate-on-load" style="transition-delay: 0.3s;">
+                    <a href="projects.html" class="btn">Explore My Work</a>
+                    <a href="contact.html" class="btn btn-outline" style="margin-left: 1.5rem;">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- You can add more introductory sections here if desired -->
+        <!-- For example, a brief "What I Do" section before "About Me" page link -->
+
+    </main>
+
+    <footer class="animate-on-load">
         <div class="container">
             <p>© 2024 Priyanka A. All rights reserved.</p>
-            <!-- Optional: Add links to GitHub/LinkedIn here -->
-            <!-- <p>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a> |
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p> -->
+            <p>
+                <a href="https://github.com/PriyankaAnantha" target="_blank" rel="noopener noreferrer" class="text-link">GitHub</a> |
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-link">LinkedIn (Add Link)</a>
+            </p>
         </div>
     </footer>
 
