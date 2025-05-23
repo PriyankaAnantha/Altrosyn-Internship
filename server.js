@@ -14,8 +14,8 @@ app.use(express.json());
 
 // Initialize Supabase client
 // Replace these with your actual Supabase URL and service role key
-const supabaseUrl = 'YOUR_SUPABASE_URL';
-const supabaseKey = 'YOUR_SERVICE_ROLE_KEY';
+const supabaseUrl = 'https://nbntegijvnrguwfobabn.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ibnRlZ2lqdm5yZ3V3Zm9iYWJuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0Nzk4MjUxMCwiZXhwIjoyMDYzNTU4NTEwfQ.o41pdm5c2XGbJYtZgyvBx-V618uWVC-HizUGmorGyC0';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Contact form submission endpoint
