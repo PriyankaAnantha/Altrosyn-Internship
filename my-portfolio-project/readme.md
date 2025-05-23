@@ -72,12 +72,7 @@ A personal portfolio website built with vanilla HTML, CSS, and JavaScript, featu
     *   Run: `serve -l 5500` (or your preferred port)
 3.  Open your browser and navigate to `http://localhost:5500`.
 
-## 📝 Daily Progress Highlights 
 
-
-*   **[Date of last major update]:** Implemented custom cursor, fixed mobile navigation, refined dark theme styling, added gradient borders to project cards, and integrated profile picture.
-*   **[Previous Date]:** Successfully connected contact form to Node.js backend and Supabase database. Implemented form submission status pages.
-*   ... (earlier updates)
 
 ## 👤 Author
 
