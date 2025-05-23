@@ -23,13 +23,24 @@ A personal portfolio website built with vanilla HTML, CSS, and JavaScript, featu
 ![Desktop Homepage](image.png) 
 *(Homepage - Desktop View)*
 
+
+![alt text](image-5.png)
+*(Contacts page)*
+
+
+![alt text](image-4.png)
+*(Successful form submission)*
+
+
+
 ![Mobile Menu](image-1.png)
 *(Mobile Navigation)*
 
 
-*(Working Supabase intergration.)*
+
 
 ![alt text](image-2.png)
+*(Working Supabase database intergration.)*
 
 
 ## 🛠️ Tech Stack
