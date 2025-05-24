@@ -1,9 +1,10 @@
+
 // frontend/src/app/components/ResumeUploadForm.tsx
 'use client';
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { formatBytes } from '@/lib/utils';
-import { DocumentArrowUpIcon, InformationCircleIcon, ExclamationTriangleIcon, CheckCircleIcon, LightBulbIcon } from '@heroicons/react/24/outline'; // More icons
+import { DocumentArrowUpIcon, InformationCircleIcon, ExclamationTriangleIcon, CheckCircleIcon, LightBulbIcon, BoltIcon } from '@heroicons/react/24/outline'; // More icons
 
 const MAX_FILE_SIZE_MB = 10;
 const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
