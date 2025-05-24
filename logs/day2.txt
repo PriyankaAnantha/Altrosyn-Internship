@@ -2,7 +2,7 @@ Today's task:
 AI resume analyser- Build a fullstack application using Node.js, Express, and supabase for analysing resumes. 
 fRONTEND- HTML, CSS, JS 
 BACKEND- NODEJS, SUPABASE 
-USE MULTER SOMETHING NPM PACKAGE TO UPLOAD RESUME
+USE MULTER NPM PACKAGE TO UPLOAD RESUME
 so there is a landing page. user should be able to resume (anay number of pages) and the application should show a loading page. 
 
 
