@@ -1,9 +1,27 @@
 /* frontend/src/app/globals.css */
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  /* You can add global styles here if needed */
+@layer base {
   body {
-    @apply bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200; /* Example dark mode setup */
+    @apply bg-slate-50 text-slate-700 dark:bg-slate-900 dark:text-slate-300; /* Lighter base, darker text */
+    @apply antialiased selection:bg-pink-500 selection:text-white; /* Added selection styles */
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-900 dark:text-white; /* Default heading colors */
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-offset-2 ring-pink-500 dark:ring-offset-slate-900;
+  }
+}
+
+/* Custom gradient text utility */
+.text-gradient-purple-pink {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent;
+}
+.bg-gradient-purple-pink {
+  @apply bg-gradient-to-r from-purple-600 to-pink-600;
+}
