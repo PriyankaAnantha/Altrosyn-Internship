@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
+  "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js", // Optional: if you install nodemon globally or as a dev dependency
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,4 +24,6 @@
     "express": "^5.1.0",
     "multer": "^2.0.0"
   }
+
+
 }
