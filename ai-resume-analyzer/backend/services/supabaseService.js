@@ -55,7 +55,43 @@
       }
   }
 
-  module.exports = {
-      logUpload,
-      // You can add more Supabase interaction functions here later
-  };
+  /**
+ * Updates the status of an existing log entry.
+ * @param {string} logId - The ID of the log entry to update.
+ * @param {string} newStatus - The new status (e.g., 'processing', 'success', 'error').
+ * @param {Object} [details] - Optional: Additional details to store (e.g., error message, summary of analysis).
+ * @returns {Promise<Object|null>} The updated data or null if an error occurred.
+ */
+async function updateLogStatus(logId, newStatus, details = {}) {
+    if (!logId) {
+        console.warn("updateLogStatus called without logId.");
+        return null;
+    }
+    try {
+        const { data, error } = await supabase
+            .from('upload_logs')
+            .update({
+                status: newStatus,
+                // You could add a 'details' JSONB column to your table to store 'details' object
+                // For now, we're just updating status.
+            })
+            .eq('id', logId)
+            .select();
+
+        if (error) {
+            console.error('Supabase updateLogStatus error:', error);
+            return null;
+        }
+        return data ? data[0] : null;
+    } catch (err) {
+        console.error('Unexpected error in updateLogStatus:', err);
+        return null;
+    }
+}
+
+
+module.exports = {
+    logUpload,
+    updateLogStatus, // Export the new function
+};
+
