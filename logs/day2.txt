@@ -1,7 +1,8 @@
 24 MAY 2025
+
 Today's task: 
 AI resume analyser- Build a fullstack application using Node.js, Express, and supabase for analysing resumes. 
-fRONTEND- HTML, CSS, JS 
+fRONTEND- HTML, CSS, JS, can use tailwind/ react/ next which ever is easiest to implement 
 BACKEND- NODEJS, SUPABASE 
 AI agent in the backent- implement using open router api key using any free llms to parse the resumes and extract the relevant information, give verdict
 USE MULTER NPM PACKAGE TO UPLOAD RESUME
@@ -13,4 +14,5 @@ after which the ai agent provides an anluysis of the resume saying: first in sho
 WORKFLOW 
 
 Break this down into task chunks to complete in three days. 
+
 
